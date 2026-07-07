@@ -52,7 +52,12 @@ export default {
         localStorage.setItem('nombre', res.data.user.name)
 
         const rol = res.data.user.rol
-        if (rol === 'guardia') this.$router.push('/guardia')
+        if      (rol === 'guardia')      this.$router.push('/guardia')
+        else if (rol === 'despachador')  this.$router.push('/despachador')
+        else if (rol === 'operador')     this.$router.push('/operador')
+        else if (rol === 'jefe_admin')   this.$router.push('/jefe-admin')
+        else if (rol === 'jefe_diesel')  this.$router.push('/jefe-diesel')
+        else if (rol === 'gerente_ops')  this.$router.push('/gerente')
         else this.error = 'Módulo no disponible para este rol aún.'
       } catch (e) {
         this.error = e.response?.data?.message || 'Error al iniciar sesión'

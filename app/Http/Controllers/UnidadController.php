@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 use App\Models\Unidad;
 
 class UnidadController extends Controller {
+    public function index() {
+        return response()->json(Unidad::where('activo', true)->get());
+    }
+
     public function buscarPorNumero($numero) {
         $unidad = Unidad::where('numero_unidad', $numero)
                         ->where('activo', true)
