@@ -1,6 +1,6 @@
 <template>
   <div class="card shadow-sm">
-    <div class="card-header bg-white fw-bold">📦 Historial de Paquetería</div>
+    <div class="card-header bg-white fw-bold"><i class="bi bi-box-seam"></i> Historial de Paquetería</div>
     <div class="card-body p-0">
       <div v-if="cargando" class="text-center p-4">Cargando...</div>
       <div v-else-if="registros.length === 0" class="text-center p-4 text-muted">

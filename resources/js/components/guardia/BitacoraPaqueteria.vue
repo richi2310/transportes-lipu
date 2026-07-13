@@ -29,8 +29,8 @@
                  class="form-control form-control-lg" min="1" placeholder="1"/>
         </div>
         <div class="col-12">
-          <button @click="registrar" class="btn btn-danger btn-lg w-100" :disabled="guardando">
-            {{ guardando ? 'Registrando y enviando SMS...' : '📦 Registrar Paquete' }}
+          <button @click="registrar" class="btn btn-danger btn-lg w-100" :disabled="guardando"><i class="bi bi-box-seam"></i> 
+            {{ guardando ? 'Registrando y enviando SMS...' : ' Registrar Paquete' }}
           </button>
         </div>
       </div>

@@ -6,7 +6,7 @@
         <input v-model="filtroFecha" type="date" class="form-control form-control-sm"
                @change="cargar" style="width:170px"/>
         <button @click="limpiar" class="btn btn-outline-secondary btn-sm">Todos</button>
-        <button @click="exportar" class="btn btn-success btn-sm">⬇ Exportar Excel</button>
+        <button @click="exportar" class="btn btn-success btn-sm"><i class="bi bi-file-earmark-excel"></i> Exportar Excel</button>
       </div>
     </div>
     <div class="card-body p-0">

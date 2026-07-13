@@ -1,12 +1,12 @@
 <template>
   <div class="card shadow-sm">
     <div class="card-header bg-white fw-bold d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <span>📋 Bitácora de Unidades</span>
+      <span><i class="bi bi-card-list"></i> Bitácora de Unidades</span>
       <div class="d-flex gap-2 flex-wrap">
         <input v-model="filtroFecha" type="date" class="form-control form-control-sm"
                @change="cargar" style="width:170px"/>
         <button @click="limpiar" class="btn btn-outline-secondary btn-sm">Hoy</button>
-        <button @click="cargar" class="btn btn-outline-primary btn-sm">🔄 Actualizar</button>
+        <button @click="cargar" class="btn btn-outline-primary btn-sm"><i class="bi bi-arrow-clockwise"></i> Actualizar</button>
       </div>
     </div>
     <div class="card-body p-0">

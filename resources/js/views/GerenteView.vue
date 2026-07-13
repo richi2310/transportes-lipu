@@ -11,11 +11,11 @@
       <ul class="nav nav-tabs mb-3">
         <li class="nav-item">
           <a class="nav-link" :class="{ active: tab === 'aforo' }"
-             @click="tab = 'aforo'" href="#">📊 Reporte de Aforo</a>
+             @click="tab = 'aforo'" href="#"><i class="bi bi-bar-chart-line"></i> Reporte de Aforo</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" :class="{ active: tab === 'paqueteria' }"
-             @click="tab = 'paqueteria'" href="#">📦 Paquetería</a>
+             @click="tab = 'paqueteria'" href="#"><i class="bi bi-box-seam"></i> Paquetería</a>
         </li>
       </ul>
       <ReporteAforo v-if="tab === 'aforo'" />

@@ -11,11 +11,11 @@
       <ul class="nav nav-tabs mb-3">
         <li class="nav-item">
           <a class="nav-link" :class="{ active: tab === 'diesel' }"
-             @click="tab = 'diesel'" href="#">⛽ Carga de Diésel</a>
+             @click="tab = 'diesel'" href="#"><i class="bi bi-fuel-pump"></i> Carga de Diésel</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" :class="{ active: tab === 'historial' }"
-             @click="tab = 'historial'" href="#">📋 Historial</a>
+             @click="tab = 'historial'" href="#"><i class="bi bi-clock-history"></i> Historial</a>
         </li>
       </ul>
       <BitacoraDiesel v-if="tab === 'diesel'" />

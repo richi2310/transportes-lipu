@@ -60,8 +60,8 @@
         <!-- Botón -->
         <div class="col-12">
           <button @click="registrar" class="btn btn-danger btn-lg w-100"
-                  :disabled="!unidad || guardando">
-            {{ guardando ? 'Guardando...' : '✔ Registrar ' + tipo }}
+                  :disabled="!unidad || guardando"><i class="bi bi-check-circle"></i>
+            {{ guardando ? 'Guardando...' : ' Registrar ' + tipo }}
           </button>
         </div>
       </div>

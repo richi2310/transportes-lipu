@@ -14,15 +14,15 @@
       <ul class="nav nav-tabs mb-3">
         <li class="nav-item">
           <a class="nav-link" :class="{ active: tab === 'unidades' }"
-             @click="tab = 'unidades'" href="#">🚌 Bitácora Unidades</a>
+             @click="tab = 'unidades'" href="#"><i class="bi bi-truck"></i> Bitácora Unidades</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" :class="{ active: tab === 'paqueteria' }"
-             @click="tab = 'paqueteria'" href="#">📦 Paquetería</a>
+             @click="tab = 'paqueteria'" href="#"><i class="bi bi-box-seam"></i> Paquetería</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" :class="{ active: tab === 'historial' }"
-             @click="tab = 'historial'" href="#">📋 Historial</a>
+             @click="tab = 'historial'" href="#"><i class="bi bi-clock-history"></i> Historial</a>
         </li>
       </ul>
 

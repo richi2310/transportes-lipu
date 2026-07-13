@@ -27,7 +27,7 @@
           <div class="col-12">
             <button @click="iniciarTurno" class="btn btn-success btn-lg w-100"
                     :disabled="!unidad_id || !ruta_id">
-              ✔ Iniciar Turno y Activar Escáner
+              <i class="bi bi-play-circle"></i> Iniciar Turno y Activar Escáner
             </button>
           </div>
         </div>
@@ -38,7 +38,7 @@
     <div v-if="configurado">
       <div class="card shadow-sm mb-3">
         <div class="card-header bg-white fw-bold d-flex justify-content-between">
-          <span>📷 Escáner de QR</span>
+          <span><i class="bi bi-qr-code-scan"></i> Escáner de QR</span>
           <button @click="configurado = false" class="btn btn-outline-secondary btn-sm">
             Cambiar turno
           </button>

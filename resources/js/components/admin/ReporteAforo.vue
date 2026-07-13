@@ -2,12 +2,12 @@
   <div>
     <div class="card shadow-sm mb-3">
       <div class="card-header bg-white fw-bold d-flex justify-content-between align-items-center flex-wrap gap-2">
-        <span>📊 Reporte Semanal de Aforo</span>
+        <span><i class="bi bi-bar-chart-line"></i> Reporte Semanal de Aforo</span>
         <div class="d-flex gap-2 flex-wrap">
           <input v-model="inicio" type="date" class="form-control form-control-sm" style="width:160px"/>
           <input v-model="fin" type="date" class="form-control form-control-sm" style="width:160px"/>
           <button @click="cargar" class="btn btn-primary btn-sm">Consultar</button>
-          <button @click="exportar" class="btn btn-success btn-sm">⬇ Excel</button>
+          <button @click="exportar" class="btn btn-success btn-sm"><i class="bi bi-file-earmark-excel"></i> Excel</button>
         </div>
       </div>
       <div class="card-body">

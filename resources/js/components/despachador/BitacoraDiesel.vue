@@ -50,8 +50,8 @@
 
         <div class="col-12">
           <button @click="registrar" class="btn btn-dark btn-lg w-100"
-                  :disabled="!unidad || guardando">
-            {{ guardando ? 'Guardando...' : '⛽ Registrar Carga de Diésel' }}
+                  :disabled="!unidad || guardando"><i class="bi bi-fuel-pump"></i>
+            {{ guardando ? 'Guardando...' : 'Registrar Carga de Diésel' }}
           </button>
         </div>
       </div>
